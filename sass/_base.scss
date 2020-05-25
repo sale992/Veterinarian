@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    margin: 4rem auto;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 120rem;
+    box-shadow: 0 2rem 6rem rgba(0,0,0,.3);
+}
+
+// --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+// --shadow-light:0 2rem 5rem rgba(0,0,0,.06);
+// --line: 1px solid var(--color-grey-light-2);

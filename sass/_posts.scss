@@ -1,0 +1,32 @@
+.posts{
+    background-color: #f7f7f7;
+    color: black;
+    text-align: left;
+    &__heading{
+        margin-top: 0;
+    }
+}
+.care__heading{
+    text-align: center;
+}
+.card__container{
+    padding: 0 .5rem;
+    
+    &--date{
+        color: #00bec9;
+        font-size: 1.2rem;
+    }
+    
+}
+.border{
+    border-left: 2px solid #d5d5d5;
+    border-right: 2px solid #d5d5d5;
+    border-bottom: 2px solid #d5d5d5;
+    background-color: #f7f7f7;
+}
+
+.read-more{
+    font-size: 2rem;
+    color: #00bec9;
+    text-decoration: none;
+}

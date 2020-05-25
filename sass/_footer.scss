@@ -1,0 +1,24 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkcyan;
+    min-height: 50rem;
+    padding: 3rem;
+
+    &__about {
+        margin: 3rem;
+
+        &--list {
+            list-style-type: none;
+        }
+    }
+    &__services {
+        margin: 3rem;
+        &--list {
+            list-style-type: none;
+        }
+    }
+    &__contact {
+    }
+}

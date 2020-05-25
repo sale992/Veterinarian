@@ -1,0 +1,61 @@
+///OVERVIEW
+.overview{
+    background-color: #fcc302;
+    min-height: 70vh;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+
+    &__text{
+        flex: 0 0 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 2rem;
+        color: #fff;
+
+        &--heading{
+            font-size: 5rem;
+        }
+    }
+
+    &__image{
+        flex: 1;
+        
+    }
+    &__photo{
+        width: 100%;
+    }
+}
+///paragraf prva strana
+.paragraph{
+    font-size: 3rem;
+    margin-top: -10rem;
+    margin-bottom: -10rem;
+}
+
+///buttons prva strana
+
+
+.btn-primary{
+    color: #fff;
+    border: .3rem solid #fff;
+    background-color: transparent;
+    font-size: 1.7rem;
+    margin: 1rem;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    &:hover{
+        background-color: #00bec9;
+        border: .3rem solid #00bec9;
+    }
+}
+
+.btn-secondary{
+    margin-top: 4rem;
+    background-color:#00bec9;
+    border: .3rem solid transparent;
+    border-radius: 100rem;
+}

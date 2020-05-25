@@ -1,0 +1,26 @@
+.clients{
+    background-image:  linear-gradient(to right, rgba(#e7b20a, .9),rgba(#e7b20a, .9)),url(../assets/clients.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 2rem;
+        
+        &--number{
+            margin: 4rem 0 2rem 0;
+        }
+        &--divison{
+            font-weight: bold;
+        }
+    }
+}
