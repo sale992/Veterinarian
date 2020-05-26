@@ -33,8 +33,7 @@
 .paragraph {
     font-size: 3rem;
     padding: 2rem 0;
-    // margin-top: -10rem;
-    // margin-bottom: -10rem;
+    
 }
 
 .btn-primary {
@@ -49,7 +48,6 @@
     outline: none;
     &:hover {
         background-color: #00bec9;
-        border: 0.3rem solid #00bec9;
     }
     
 }
@@ -57,14 +55,13 @@
 .btn-secondary {
     margin-top: 4rem;
     background-color: #00bec9;
-    border: 0.3rem solid transparent;
+    border: 3px solid transparent;
     border-radius: 100rem;
     cursor: pointer;
     transition: all 0.3s ease;
     opacity: 0.8;
     &:hover {
         opacity: 1;
-        
     }
     &:focus{
         outline: none;

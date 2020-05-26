@@ -95,7 +95,8 @@ body {
       background-color: #fcc302; }
     .search__input::-webkit-input-placeholder {
       font-weight: 400;
-      color: #fff; }
+      color: #fff;
+      padding: 0 3rem; }
   .search__input:focus + .search__button {
     background-color: #00bec9; }
   .search__button {
@@ -110,7 +111,6 @@ body {
       transform: translateY(2px); }
   @media only screen and (max-width: 56.25em) {
     .search {
-      width: 100%;
       margin: 3rem 0; } }
 
 .overview {
@@ -151,13 +151,12 @@ body {
   cursor: pointer;
   outline: none; }
   .btn-primary:hover {
-    background-color: #00bec9;
-    border: 0.3rem solid #00bec9; }
+    background-color: #00bec9; }
 
 .btn-secondary {
   margin-top: 4rem;
   background-color: #00bec9;
-  border: 0.3rem solid transparent;
+  border: 3px solid transparent;
   border-radius: 100rem;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -198,7 +197,7 @@ body {
       bottom: -5%;
       left: -5%;
       width: 20rem;
-      height: 15rem;
+      height: 20rem;
       z-index: -1; }
     @media only screen and (max-width: 48em) {
       .service__image {
