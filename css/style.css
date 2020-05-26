@@ -78,17 +78,13 @@ body {
   width: 100%; }
   .search__input {
     font-family: inherit;
-    font-size: inherit;
+    font-size: 2rem;
     color: inherit;
-    padding: .8rem 0;
     background-color: #fcc302;
     border: none;
     width: 40%;
     margin-right: -2.5rem;
     transition: all 0.2s; }
-    @media only screen and (max-width: 56.25em) {
-      .search__input {
-        padding: 1.52rem 0; } }
     .search__input:focus {
       outline: none;
       width: 50%;
