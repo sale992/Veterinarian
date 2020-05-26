@@ -1,4 +1,4 @@
-.overview{
+.overview {
     background-color: #fcc302;
     height: 100%;
     width: 100%;
@@ -7,8 +7,8 @@
     justify-content: center;
     align-content: center;
     overflow: hidden;
-    
-    &__text{
+
+    &__text {
         flex: 0 1 70%;
         display: flex;
         flex-direction: column;
@@ -17,47 +17,56 @@
         padding: 2rem;
         color: #fff;
 
-        &--heading{
+        &--heading {
             font-size: 5rem;
             line-height: 5rem;
         }
     }
 
-    &__image{
+    &__image {
         // flex: 1;
-        
     }
-    &__photo{
+    &__photo {
         width: 100%;
     }
 }
-.paragraph{
+.paragraph {
     font-size: 3rem;
     // margin-top: -10rem;
     // margin-bottom: -10rem;
 }
 
-
-
-
-.btn-primary{
+.btn-primary {
     color: #fff;
-    border: .3rem solid #fff;
+    border: 0.3rem solid #fff;
     background-color: transparent;
     font-size: 1.7rem;
     margin: 1rem;
     padding: 1rem 2rem;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     cursor: pointer;
-    &:hover{
+    outline: none;
+    &:hover {
         background-color: #00bec9;
-        border: .3rem solid #00bec9;
+        border: 0.3rem solid #00bec9;
     }
+    
 }
 
-.btn-secondary{
+.btn-secondary {
     margin-top: 4rem;
-    background-color:#00bec9;
-    border: .3rem solid transparent;
+    background-color: #00bec9;
+    border: 0.3rem solid transparent;
     border-radius: 100rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+    &:hover {
+        opacity: 1;
+        
+    }
+    &:focus{
+        outline: none;
+        transform: translateY(2px);
+    }
 }
