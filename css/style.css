@@ -99,7 +99,6 @@ body {
   .search__input:focus + .search__button {
     background-color: #00bec9; }
   .search__button {
-    height: 100%;
     border: none;
     background-color: #00bec9;
     cursor: pointer; }
