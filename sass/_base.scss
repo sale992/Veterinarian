@@ -1,31 +1,67 @@
-*{
+$bp-largest: 75em; //1200px
+$bp-large: 62.5em; //1100px
+$bp-medium: 56.25em; //900px
+$bp-medium-small: 48em; //768px
+$bp-small: 37.5em; //600px
+$bp-smallest: 25em; //400px
+
+* {
     margin: 0;
     padding: 0;
 }
 *,
 *::after,
-*::before{
+*::before {
     box-sizing: inherit;
 }
 
-
-html{
+html {
     box-sizing: border-box;
     font-size: 62.5%;
+    @media only screen and (max-width: $bp-large){
+        font-size: 50%;
+    }
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 40%;
+    }
+    @media only screen and (max-width: $bp-medium-small) {
+        font-size: 35%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 30%;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 20%;
+    }
+    
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
+body {
+    font-family: "Poppins", sans-serif;
+    
 }
 
-.container{
+.container {
     margin: 4rem auto;
     padding: 0;
-    box-sizing: border-box;
+    // box-sizing: border-box;
     max-width: 120rem;
-    box-shadow: 0 2rem 6rem rgba(0,0,0,.3);
-}
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
 
-// --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
-// --shadow-light:0 2rem 5rem rgba(0,0,0,.06);
-// --line: 1px solid var(--color-grey-light-2);
+    @media only screen and(max-width: $bp-largest) {
+        margin: 0;
+    }
+    @media only screen and (max-width: $bp-large){
+        width: 100%;
+        margin: 0;
+    }
+    @media only screen and (max-width: $bp-medium) {
+        max-width: 100%;
+    }
+
+    // @media only screen and (max-width: $bp-medium-small){
+    //     max-width: 100%;
+    // }
+}

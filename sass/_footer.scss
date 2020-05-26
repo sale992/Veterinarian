@@ -1,24 +1,57 @@
 .footer {
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: darkcyan;
+    align-items: flex-start;
+    background-color: #343434;
+    color: #fff;
     min-height: 50rem;
-    padding: 3rem;
+    padding: 4rem;
+    font-size: 3.5rem;
+    font-weight: 200;
+
 
     &__about {
         margin: 3rem;
-
+        &--heading{
+        font-weight: 500;
+        }
         &--list {
             list-style-type: none;
+            font-size: 2.5rem;
         }
+
     }
     &__services {
         margin: 3rem;
+        &--heading{
+            font-weight: 500;
+            }
         &--list {
             list-style-type: none;
+            font-size: 2.5rem;
         }
     }
     &__contact {
+        padding: 3rem;
+        text-align: right;
+        &--heading{
+            font-weight: 500;
+            }
+        &--text{
+            font-size: 2.5rem;
+            font-weight: 200;
+        }
+        &--social{
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    &__search{
+        justify-content: flex-end;
+        padding: 3rem 0 3rem 0;
+    }
+    &__button{
+        align-self: stretch;
+        width: 7rem;
     }
 }

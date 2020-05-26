@@ -10,28 +10,55 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 62.5em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 40%; } }
+  @media only screen and (max-width: 48em) {
+    html {
+      font-size: 35%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 30%; } }
+  @media only screen and (max-width: 25em) {
+    html {
+      font-size: 20%; } }
 
 body {
-  font-family: 'Poppins', sans-serif; }
+  font-family: "Poppins", sans-serif; }
 
 .container {
   margin: 4rem auto;
   padding: 0;
-  box-sizing: border-box;
   max-width: 120rem;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3); }
+  @media only screen and (max-width: 75em) {
+    .container {
+      margin: 0; } }
+  @media only screen and (max-width: 62.5em) {
+    .container {
+      width: 100%;
+      margin: 0; } }
+  @media only screen and (max-width: 56.25em) {
+    .container {
+      max-width: 100%; } }
 
 .header {
   background-color: #daac00;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%; }
+  max-width: 100%; }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      flex-direction: column; } }
 
 .navigation {
   font-size: 2.5rem;
   font-family: "Poppins", sans-serif;
-  font-weight: 400; }
+  font-weight: 500; }
   .navigation__list {
     list-style-type: none;
     display: flex; }
@@ -39,9 +66,11 @@ body {
     text-decoration: none;
     margin: 1rem 2rem;
     color: #fff; }
+    .navigation__link:hover {
+      color: #00bec9; }
 
 .search {
-  flex: 0 0 30%;
+  flex: 0 1 30%;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -72,24 +101,28 @@ body {
       outline: none; }
     .search__button:active {
       transform: translateY(2px); }
+  @media only screen and (max-width: 37.5em) {
+    .search {
+      width: 100%;
+      margin: 1rem 0 1rem 0; } }
 
 .overview {
   background-color: #fcc302;
-  min-height: 70vh;
+  height: 100%;
+  width: 100%;
   padding: 5rem;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  overflow: hidden; }
   .overview__text {
-    flex: 0 0 60%;
+    flex: 0 1 60%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 2rem;
     color: #fff; }
     .overview__text--heading {
       font-size: 5rem; }
-  .overview__image {
-    flex: 1; }
   .overview__photo {
     width: 100%; }
 
@@ -118,8 +151,7 @@ body {
   border-radius: 100rem; }
 
 .service {
-  min-height: 70rem;
-  margin: 1rem 10rem;
+  margin: 10rem 10rem;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -137,9 +169,13 @@ body {
     background-image: linear-gradient(to right, rgba(216, 190, 93, 0.6), rgba(216, 190, 93, 0.6)), url(../assets/healthcare.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80vh;
+    height: 70vh;
+    width: 100%;
     overflow: hidden;
     position: relative; }
+    @media only screen and (max-width: 48em) {
+      .service__image {
+        height: 50vh; } }
   .service__icon {
     background-color: #fff;
     border-radius: 50%;
@@ -165,7 +201,6 @@ body {
     background-image: linear-gradient(to right, rgba(216, 190, 93, 0.6), rgba(216, 190, 93, 0.6)), url(../assets/healthcare2.png); }
 
 .care {
-  min-height: 100vh;
   padding: 5rem;
   background-color: #fcc302;
   text-align: center;
@@ -215,20 +250,16 @@ body {
   min-width: 50vh;
   text-align: center; }
 
-.swiper-wrapper {
-  margin: 1rem; }
-
-.swiper-slide {
-  margin-right: 3rem;
-  padding: 3rem; }
-
 .social-icon {
   background-color: orangered; }
 
 .card {
   margin-bottom: 8rem; }
+  .card img {
+    width: 100%; }
 
 .swcard__container {
+  width: 100%;
   text-align: center; }
   .swcard__container--name {
     margin-top: 2rem;
@@ -239,6 +270,14 @@ body {
     padding: 2rem 0;
     font-size: 1.5rem;
     font-weight: 600; }
+  .swcard__container--social {
+    display: flex;
+    justify-content: center; }
+
+.social-icon {
+  width: 3rem;
+  height: 3rem;
+  fill: red; }
 
 .clients {
   background-image: linear-gradient(to right, rgba(231, 178, 10, 0.9), rgba(231, 178, 10, 0.9)), url(../assets/clients.png);
@@ -261,6 +300,9 @@ body {
       margin: 4rem 0 2rem 0; }
     .clients__content--divison {
       font-weight: bold; }
+  @media only screen and (max-width: 37.5em) {
+    .clients {
+      min-height: 50vh; } }
 
 .posts {
   background-color: #f7f7f7;
@@ -292,15 +334,41 @@ body {
 .footer {
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: darkcyan;
+  align-items: flex-start;
+  background-color: #343434;
+  color: #fff;
   min-height: 50rem;
-  padding: 3rem; }
+  padding: 4rem;
+  font-size: 3.5rem;
+  font-weight: 200; }
   .footer__about {
     margin: 3rem; }
+    .footer__about--heading {
+      font-weight: 500; }
     .footer__about--list {
-      list-style-type: none; }
+      list-style-type: none;
+      font-size: 2.5rem; }
   .footer__services {
     margin: 3rem; }
+    .footer__services--heading {
+      font-weight: 500; }
     .footer__services--list {
-      list-style-type: none; }
+      list-style-type: none;
+      font-size: 2.5rem; }
+  .footer__contact {
+    padding: 3rem;
+    text-align: right; }
+    .footer__contact--heading {
+      font-weight: 500; }
+    .footer__contact--text {
+      font-size: 2.5rem;
+      font-weight: 200; }
+    .footer__contact--social {
+      display: flex;
+      justify-content: flex-end; }
+  .footer__search {
+    justify-content: flex-end;
+    padding: 3rem 0 3rem 0; }
+  .footer__button {
+    align-self: stretch;
+    width: 7rem; }
