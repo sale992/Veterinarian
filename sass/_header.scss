@@ -58,6 +58,10 @@
             font-weight: 400;
             color: #fff;
         }
+
+        @media only screen and (max-width: $bp-medium){
+            padding: 1rem 0;
+        }
     }
     &__input:focus + &__button {
         background-color: #00bec9;
