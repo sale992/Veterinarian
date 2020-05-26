@@ -93,6 +93,9 @@ body {
     .search__input::-webkit-input-placeholder {
       font-weight: 400;
       color: #fff; }
+    @media only screen and (max-width: 56.25em) {
+      .search__input {
+        padding: 1rem 0; } }
   .search__input:focus + .search__button {
     background-color: #00bec9; }
   .search__button {
