@@ -97,6 +97,8 @@ body {
     border: none;
     background-color: #00bec9;
     cursor: pointer; }
+    .search__button img {
+      width: 3rem; }
     .search__button:focus {
       outline: none; }
     .search__button:active {
@@ -226,7 +228,7 @@ body {
     margin: 3rem 1.2rem;
     cursor: pointer;
     transition: all .5s ease; }
-    .care .card img {
+    .care .card .cover {
       width: 100%; }
     .care .card__container--heading {
       margin-top: 2rem;
@@ -250,9 +252,6 @@ body {
   min-width: 50vh;
   text-align: center; }
 
-.social-icon {
-  background-color: orangered; }
-
 .card {
   margin-bottom: 8rem; }
   .card img {
@@ -273,11 +272,12 @@ body {
   .swcard__container--social {
     display: flex;
     justify-content: center; }
-
-.social-icon {
-  width: 3rem;
-  height: 3rem;
-  fill: red; }
+    .swcard__container--social .social-icon {
+      width: 3rem;
+      margin: 0 1rem;
+      display: flex;
+      background-color: #daac00;
+      border-radius: 100px; }
 
 .clients {
   background-image: linear-gradient(to right, rgba(231, 178, 10, 0.9), rgba(231, 178, 10, 0.9)), url(../assets/clients.png);
@@ -366,6 +366,11 @@ body {
     .footer__contact--social {
       display: flex;
       justify-content: flex-end; }
+      .footer__contact--social .social-icon {
+        width: 4rem;
+        margin: 0 1rem;
+        display: flex;
+        border-radius: 100px; }
   .footer__search {
     justify-content: flex-end;
     padding: 3rem 0 3rem 0; }

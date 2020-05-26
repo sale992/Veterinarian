@@ -44,6 +44,14 @@
         &--social{
             display: flex;
             justify-content: flex-end;
+
+            .social-icon{
+                width: 4rem;
+                margin: 0 1rem;
+                display: flex;
+                border-radius: 100px;
+               
+            }
         }
     }
     &__search{

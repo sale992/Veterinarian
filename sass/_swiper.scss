@@ -4,24 +4,23 @@
     text-align: center;
 }
 .swiper-container{
-    // margin: 13rem 2rem;
-    // @media only screen and (max-width: $bp-large){
-    //     margin: 0;
-    // }
+    // width: 80%;
 }
 .swiper-wrapper{
     // margin: 1rem;
+    // width: fit-content;
 }
 .swiper-slide{
     // margin: 0 3rem 0 3rem;
     // padding: 3rem;
+    // width: fit-content;
 }
 
 .card{}
 
-.social-icon{
-    background-color: orangered;
-}
+// .social-icon{
+//     background-color: orangered;
+// }
 .card{
     margin-bottom: 8rem;
     img{
@@ -46,16 +45,16 @@
     &--social{
         display: flex;
         justify-content: center;
-        // color: blue;
-        // -webkit-mask: no-repeat center;
-        // mask: no-repeat center;
-        // mask-size: cover;
+        
+        .social-icon{
+            width: 3rem;
+            margin: 0 1rem;
+            display: flex;
+            background-color: #daac00;
+            border-radius: 100px;
+           
+        }
     }
 }
-.social-icon{
-    width: 3rem;
-    height: 3rem;
-    fill: red;
-    // background-color: red;
-}
+
 
