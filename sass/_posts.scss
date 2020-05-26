@@ -23,11 +23,13 @@
     border-right: 2px solid #d5d5d5;
     border-bottom: 2px solid #d5d5d5;
     background-color: #f7f7f7;
-    &:nth-of-type(2){
-        border: 2px solid transparent;
-    }
+   
 }
-
+#transparent{
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
 .read-more{
     font-size: 2rem;
     color: #00bec9;
