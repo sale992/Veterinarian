@@ -1,5 +1,5 @@
 .care {
-    min-height: 100vh;
+    // min-height: 100vh;
     padding: 5rem;
     background-color: #fcc302;
     text-align: center;
@@ -23,13 +23,11 @@
     &__cards {
         padding: 3rem;
         display: flex;
-        // flex-wrap: wrap;
         justify-content: center;
         max-width: 100%;
     }
 
     .card{
-        // width: 10%;
         margin: 3rem 1.2rem;
         cursor: pointer;
         transition: all .5s ease;
