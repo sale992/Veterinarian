@@ -51,7 +51,7 @@ body {
   justify-content: center;
   align-items: center;
   max-width: 100%; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 56.25em) {
     .header {
       flex-direction: column; } }
 
@@ -101,7 +101,7 @@ body {
       outline: none; }
     .search__button:active {
       transform: translateY(2px); }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 56.25em) {
     .search {
       width: 100%;
       margin: 1rem 0 1rem 0; } }
