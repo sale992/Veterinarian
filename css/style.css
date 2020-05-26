@@ -80,7 +80,7 @@ body {
     font-family: inherit;
     font-size: inherit;
     color: inherit;
-    padding: 0.7rem 0;
+    padding: .8rem 0;
     background-color: #fcc302;
     border: none;
     width: 40%;
@@ -96,6 +96,7 @@ body {
   .search__input:focus + .search__button {
     background-color: #00bec9; }
   .search__button {
+    height: 100%;
     border: none;
     background-color: #00bec9;
     cursor: pointer; }
@@ -108,7 +109,7 @@ body {
   @media only screen and (max-width: 56.25em) {
     .search {
       width: 100%;
-      margin: 1rem 0 1rem 0; } }
+      margin: 3rem 0; } }
 
 .overview {
   background-color: #fcc302;
@@ -360,8 +361,11 @@ body {
   border-right: 2px solid #d5d5d5;
   border-bottom: 2px solid #d5d5d5;
   background-color: #f7f7f7; }
-  .border:nth-of-type(2) {
-    border: 2px solid transparent; }
+
+#transparent {
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-bottom: 2px solid transparent; }
 
 .read-more {
   font-size: 2rem;
