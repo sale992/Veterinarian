@@ -4,11 +4,13 @@ $bp-medium: 56.25em; //900px
 $bp-medium-small: 48em; //768px
 $bp-small: 37.5em; //600px
 $bp-smallest: 28.125em; //400px
+$bp-phone: 20em; //320px
 
-* {
+*{
     margin: 0;
     padding: 0;
 }
+
 *,
 *::after,
 *::before {
@@ -63,6 +65,6 @@ body {
     }
 
     // @media only screen and (max-width: $bp-medium-small){
-    //     max-width: 100%;
+    //     // max-width: 100%;
     // }
 }
