@@ -74,12 +74,13 @@ body {
   flex: 0 1 30%;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  width: 100%; }
   .search__input {
     font-family: inherit;
     font-size: inherit;
     color: inherit;
-    padding: 0.7rem 2rem;
+    padding: 0.7rem 0;
     background-color: #fcc302;
     border: none;
     width: 40%;
@@ -99,7 +100,7 @@ body {
     background-color: #00bec9;
     cursor: pointer; }
     .search__button img {
-      width: 3rem; }
+      width: 2.7rem; }
     .search__button:focus {
       outline: none; }
     .search__button:active {
@@ -133,7 +134,8 @@ body {
     width: 100%; }
 
 .paragraph {
-  font-size: 3rem; }
+  font-size: 3rem;
+  padding: 2rem 0; }
 
 .btn-primary {
   color: #fff;
@@ -185,8 +187,16 @@ body {
     background-size: cover;
     height: 70vh;
     width: 100%;
-    overflow: hidden;
     position: relative; }
+    .service__image::after {
+      content: "";
+      background-color: #fcc302;
+      position: absolute;
+      bottom: -5%;
+      left: -5%;
+      width: 20rem;
+      height: 15rem;
+      z-index: -1; }
     @media only screen and (max-width: 48em) {
       .service__image {
         height: 50vh; } }
@@ -251,7 +261,8 @@ body {
       font-size: 2.5rem; }
     .care .card__container--paragraph {
       margin-top: 2rem;
-      font-size: 2rem; }
+      font-size: 2rem;
+      padding-bottom: 2rem; }
     .care .card:hover {
       transform: scale(1.05);
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5); }
@@ -339,7 +350,7 @@ body {
   text-align: center; }
 
 .card__container {
-  padding: 0 .5rem; }
+  padding: 0 1.5rem 1.5rem 1.5rem; }
   .card__container--date {
     color: #00bec9;
     font-size: 1.2rem; }
