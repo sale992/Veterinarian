@@ -67,7 +67,9 @@
         border: none;
         background-color: #00bec9;
         cursor: pointer;
-
+        img{
+            width: 3rem;
+        }
         &:focus {
             outline: none;
         }
