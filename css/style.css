@@ -79,7 +79,7 @@ body {
   .search__input {
     font-family: inherit;
     font-size: 2rem;
-    color: inherit;
+    color: #fff;
     background-color: #fcc302;
     border: none;
     width: 40%;
@@ -138,7 +138,7 @@ body {
 
 .btn-primary {
   color: #fff;
-  border: 0.3rem solid #fff;
+  border: 3px solid #fff;
   background-color: transparent;
   font-size: 1.7rem;
   margin: 1rem;
@@ -147,7 +147,8 @@ body {
   cursor: pointer;
   outline: none; }
   .btn-primary:hover {
-    background-color: #00bec9; }
+    background-color: #00bec9;
+    border-color: #00bec9; }
 
 .btn-secondary {
   margin-top: 4rem;
@@ -422,7 +423,7 @@ body {
           filter: invert(100%); }
   .footer__search {
     justify-content: flex-end;
-    padding: 3rem 0 3rem 0; }
+    padding: 3rem 0; }
   .footer__button {
     align-self: stretch;
     width: 7rem; }
