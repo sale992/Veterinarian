@@ -2,6 +2,7 @@
     margin: 5rem 7rem;
     min-width: 50vh;
     text-align: center;
+    overflow: hidden;
 }
 .swiper-container{
     // width: 80%;
@@ -15,12 +16,6 @@
     // padding: 3rem;
     // width: fit-content;
 }
-
-.card{}
-
-// .social-icon{
-//     background-color: orangered;
-// }
 .card{
     margin-bottom: 8rem;
     img{
