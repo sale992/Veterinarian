@@ -5,10 +5,12 @@
     background-size: cover;
     width: 100%;
     min-height: 100vh;
+    padding: 1.6rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     color: #fff;
+    overflow: hidden;
     &__content{
         display: flex;
         flex-direction: column;
