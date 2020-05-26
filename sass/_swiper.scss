@@ -48,6 +48,13 @@
             display: flex;
             background-color: #daac00;
             border-radius: 100px;
+
+            cursor: pointer;
+                transition: all .3s ease;
+                &:hover{
+                    opacity: .8;
+                    filter: invert(100%);
+                }
            
         }
     }
